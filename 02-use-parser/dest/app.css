@@ -1,0 +1,13 @@
+@media screen and (min-width: 48px) {
+  body {
+    background-color: red;
+  }
+}
+
+#main {
+  border: 1px solid black;
+}
+
+ul li {
+    padding: 5px;
+  }
