@@ -10,6 +10,7 @@ postcss 练习
 - [x] 编写自己的 postcss 插件
 - [x] 使用 stylelint 制定 css 规范
 - [x] 编写自己的 stylelint 插件
+- [x] postcss parser 源码分析
 
 ## 参考文档
 
