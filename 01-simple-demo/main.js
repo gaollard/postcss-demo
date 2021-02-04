@@ -1,6 +1,6 @@
-const autoprefixer = require('autoprefixer') // plugin
-const postcss = require('postcss') // postcss
-const precss = require('precss') // plugin
+const autoprefixer = require('autoprefixer')
+const postcss = require('postcss')
+const precss = require('precss')
 const fs = require('fs')
 const path = require('path')
 

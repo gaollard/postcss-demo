@@ -8426,6 +8426,7 @@
     }
 
     function nextToken (opts) {
+      debugger
       if (returned.length) return returned.pop()
       if (pos >= length) return
 
@@ -8613,6 +8614,8 @@
             if (RE_WORD_END.lastIndex === 0) {
               next = css.length - 1;
             } else {
+              // lastIndex 表示下一个的匹配位置
+              // 距离"匹配成功的索引" 之前的最后一个元素索引为 2
               next = RE_WORD_END.lastIndex - 2;
             }
 
@@ -10437,16 +10440,8 @@
   var postcss_1 = postcss$1;
   postcss$1.default = postcss$1;
 
-  var postcss$2 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    'default': postcss_1,
-    __moduleExports: postcss_1
-  });
-
-  var postcss$3 = getCjsExportFromNamespace(postcss$2);
-
   const css = `.red { color: red }`;
-  const root$1 = postcss$3.parse(css);
+  const root$1 = postcss_1.parse(css);
   console.log(root$1); // postcss.parse(css)
   // token
   // [ 'word', '.red', 0, 3 ]

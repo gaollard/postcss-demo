@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+const RE_AT_END = /[\t\n\f\r "#'()/;[\\\]{}]/g
+const RE_WORD_END = /[\t\n\f\r !"#'():;@[\\\]{}]|\/(?=\*)/g
+const RE_BAD_BRACKET = /.[\n"'(/\\]/
+const RE_HEX_ESCAPE = /[\da-f]/i
+
+const css = `.red { color: red }`
+
+// RE_WORD_END.lastIndex = 0 + 1;
+// console.log(RE_WORD_END.test(css))
+console.log(RE_WORD_END.exec(css))
+
+debugger
+</script>
+</html>
