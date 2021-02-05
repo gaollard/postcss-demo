@@ -18,8 +18,6 @@ function rule(primary, secondary) {
       return
     }
 
-    console.log(555);
-
     root.walkComments((comment) => {
       if (comment.text && comment.text.length !== 0) {
         return

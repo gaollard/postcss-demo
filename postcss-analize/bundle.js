@@ -8426,7 +8426,6 @@
     }
 
     function nextToken (opts) {
-      debugger
       if (returned.length) return returned.pop()
       if (pos >= length) return
 
@@ -8819,6 +8818,7 @@
     }
 
     parse () {
+      debugger
       let token;
       while (!this.tokenizer.endOfFile()) {
         token = this.tokenizer.nextToken();
@@ -10442,14 +10442,7 @@
 
   const css = `.red { color: red }`;
   const root$1 = postcss_1.parse(css);
-  console.log(root$1); // postcss.parse(css)
-  // token
-  // [ 'word', '.red', 0, 3 ]
-  // [ 'space', ' ' ]
-  // [ 'word', 'color', 7, 11 ]
-  // [ 'space', ' ' ]
-  // [ '}', '}', 18 ]
-
+  console.log(root$1);
   var main = {};
 
   return main;
