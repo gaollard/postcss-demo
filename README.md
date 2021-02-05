@@ -1,6 +1,6 @@
 # postcss-demo
 
-postcss 练习
+postcss 练习，详细文档见 [doc](./doc.md)
 
 ## 内容目录
 
